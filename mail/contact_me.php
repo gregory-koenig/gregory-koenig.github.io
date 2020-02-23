@@ -1,24 +1,37 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+/**
+ * Check for empty fields
+ */
+if(empty($_POST['name'])
+    || empty($_POST['email'])
+    || empty($_POST['message'])
+    || !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
 	echo "Aucun argument fourni !";
 	return false;
    }
-	
-$name = strip_tags(htmlspecialchars($_POST['name']));
+
+$name          = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-	
-// Create the email and send the message
-$to = 'koenig.gregory@epitech.eu'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$message       = strip_tags(htmlspecialchars($_POST['message']));
+
+/**
+ * Create the email and send the message
+ */
+// Add your email address inbetween the '' replacing yourname@yourdomain.com
+// This is where the form will send a message to.
+$to            = 'gregory.koenig@epitech.eu';
 $email_subject = "[Portfolio] - Formulaire de contact : $name";
-$email_body = "Vous avez reçu un nouveau message du formulaire de contact de votre site web Portfolio.\n\n"."Voici les détails:\n\nNom: $name\n\nAdresse e-mail: $email_address\n\nNuméro de téléphone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";	
+$email_body    = "Vous avez reçu un nouveau message du formulaire de contact de votre site web Portfolio.\n\n"
+    . "Voici les détails :\n\n"
+    . "Nom : $name\n\n"
+    . "Adresse e-mail : $email_address\n\n"
+    . "Numéro de téléphone : $phone\n\n"
+    . "Message :\n$message";
+// This is the email address the generated message will be from. We recommend
+// using something like noreply@yourdomain.com.
+$headers       = "From: noreply@yourdomain.com\n";
+$headers      .= "Reply-To: $email_address";
+
 mail($to,$email_subject,$email_body,$headers);
-return true;			
-?>
+return true;
