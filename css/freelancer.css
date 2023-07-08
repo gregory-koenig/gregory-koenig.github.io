@@ -370,8 +370,8 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #ff952a;
-  border-color: #ff952a;
+  background-color: #ff952a !important;
+  border-color: #ff952a !important;
 }
 
 .btn-secondary {
