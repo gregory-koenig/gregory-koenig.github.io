@@ -229,7 +229,7 @@ jQuery(function ($) {
 	 */
 	$('#btn-rules').click(function () {
 		alert('Matchstick is a Nim game based on matches. There is a single '
-			+ 'line with 11 matches. Players play in turn from the left.'
+			+ 'line with 11 matches. Players play in turn from the left. '
 			+ 'Each player can only take between one and three matches. The one'
 			+ ' who takes the last match lose.')
 	})
