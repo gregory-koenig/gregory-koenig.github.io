@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Grégory Koenig | Portfolio | Jeu des allumettes</title>
+
+	<meta name="viewport" content="initial-scale = 1.0" />
+	<meta charset="UTF-8" />
+
+	<!-- Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Jeu des allumettes</h1>
+
+		<!-- Menu -->
+		<div class="form-row" id="menu">
+			<div class="col-md-4 mb-3">
+				<select class="custom-select" id="select-level">
+					<option value="" selected>- Difficulty -</option>
+					<option value="easy">Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select>
+			</div>
+
+			<div class="col-md-1 mb-3">
+				<button class="btn btn-success" id="btn-start">Start</button>
+			</div>
+			<div class="col-md-2 mb-3">
+				<button class="btn btn-warning" id="btn-reset-victory">Reset victory meter</button>
+			</div>
+			<div class="col-md-1 mb-3">
+				<button class="btn btn-danger" id="btn-reset">Reset</button>
+			</div>
+			<div class="col-md-1 mb-3">
+				<button class="btn btn-secondary" id="btn-rules">Rules</button>
+			</div>
+		</div>
+
+		<!-- Matches -->
+		<div id="matches"></div>
+
+		<!-- Victory meter -->
+		<div id="count-victory"></div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

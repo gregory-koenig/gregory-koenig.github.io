@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Grégory Koenig" />
 
-    <title>Portfolio - Grégory Koenig</title>
+    <title>Grégory Koenig | Portfolio</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -186,7 +186,7 @@
                             </div>
                         </div>
 
-                        <img class="img-fluid" src="img/portfolio/my-cinema.png" alt="Projet My Cinema" />
+                        <img class="img-fluid" src="img/connect-four.png" alt="Connect Four project" />
                     </a>
                 </div>
 
@@ -198,7 +198,7 @@
                             </div>
                         </div>
 
-                        <img class="img-fluid" src="img/portfolio/puissance-4.png" alt="Projet Puissance 4" />
+                        <img class="img-fluid" src="img/matchstick.png" alt="Matchstick project" />
                     </a>
                 </div>
 
@@ -210,7 +210,19 @@
                             </div>
                         </div>
 
-                        <img class="img-fluid" src="img/portfolio/my-meetic.png" alt="Projet My Meetic" />
+                        <img class="img-fluid" src="img/my-paint.png" alt="My Paint project" />
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <img class="img-fluid" src="img/wysiwyg-editor.png" alt="Wysiwyg editor project" />
                     </a>
                 </div>
             </div>
@@ -290,16 +302,22 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-secondary text-uppercase mb-0">
-                            My Cinema
+                            Puissance 4
                         </h2>
 
                         <hr class="star-dark mb-5">
 
-                        <img class="img-fluid mb-5" src="img/portfolio/my_cinema.png" alt="My Cinema" />
+                        <img class="img-fluid mb-5" src="img/connect-four.png" alt="Connect Four" />
 
                         <p class="mb-5">
-                            Projet PHP et MySQL qui permet d'interagir avec une base de données
+                            Le célèbre jeu de stratégie développé avec jQuery
                         </p>
+
+                        <a class="btn btn-lg btn-dark rounded-pill" href="projects/connect-four/connect-four.html"
+                            target="_blank">
+                            <i class="fa fa-play"></i>
+                            Démarrer le projet
+                        </a>
 
                         <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                             <i class="fa fa-close"></i>
@@ -321,15 +339,21 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">Puissance 4</h2>
+                        <h2 class="text-secondary text-uppercase mb-0">Jeu des allumettes</h2>
 
                         <hr class="star-dark mb-5">
 
-                        <img class="img-fluid mb-5" src="img/portfolio/puissance_4.png" alt="Puissance 4" />
+                        <img class="img-fluid mb-5" src="img/matchstick.png" alt="Matchstick" />
 
                         <p class="mb-5">
-                            Réalisation d'un puissance 4 en JavaScript avec la librairie jQuery
+                            Variante du jeu de Nim, popularisé grâce à l'émission Fort Boyard et développé avec jQuery
                         </p>
+
+                        <a class="btn btn-lg btn-dark rounded-pill" href="projects/matchstick/matchstick.html"
+                            target="_blank">
+                            <i class="fa fa-play"></i>
+                            Démarrer le projet
+                        </a>
 
                         <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                             <i class="fa fa-close"></i>
@@ -352,16 +376,60 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-secondary text-uppercase mb-0">
-                            My Meetic
+                            My Paint
                         </h2>
 
                         <hr class="star-dark mb-5">
 
-                        <img class="img-fluid mb-5" src="img/portfolio/my_meetic.png" alt="My Meetic" />
+                        <img class="img-fluid mb-5" src="img/my-paint.png" alt="My Paint" />
 
                         <p class="mb-5">
-                            Projet PHP orienté objet utilisant le design pattern MVC et des requêtes Ajax en jQuery
+                            Une version sobre du populaire logiciel créé par Microsoft développé avec jQuery
                         </p>
+
+                        <a class="btn btn-lg btn-dark rounded-pill" href="projects/my-paint/my-paint.html"
+                            target="_blank">
+                            <i class="fa fa-play"></i>
+                            Démarrer le projet
+                        </a>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Fermer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Éditeur WYSIWYG
+                        </h2>
+
+                        <hr class="star-dark mb-5">
+
+                        <img class="img-fluid mb-5" src="img/wysiwyg-editor.png" alt="WYSIWYG Editor" />
+
+                        <p class="mb-5">
+                            Une interface graphique WYSIWYG (What You See Is What You Get) développé avec jQuery
+                        </p>
+
+                        <a class="btn btn-lg btn-dark rounded-pill" href="projects/wysiwyg-editor/wysiwyg-editor.html"
+                            target="_blank">
+                            <i class="fa fa-play"></i>
+                            Démarrer le projet
+                        </a>
 
                         <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                             <i class="fa fa-close"></i>

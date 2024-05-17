@@ -1,0 +1,17 @@
+body {
+	background: gainsboro;
+
+	text-align: center;
+}
+
+#canvas {
+	display: block;
+	margin:0 auto 20px auto;
+
+	border: 4px ridge gray;
+    border-radius: 15px;
+
+	background: white;
+
+	cursor: crosshair;
+}

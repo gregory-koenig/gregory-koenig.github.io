@@ -1,0 +1,26 @@
+body {
+	background: gainsboro;
+
+	text-align: center;
+}
+
+#matches {
+	display: block;
+	margin:0 auto 20px auto;
+
+	border: 4px ridge gray;
+    border-radius: 15px;
+
+	background: white;
+
+	cursor: crosshair;
+}
+
+.img-selected {
+	border: 5px solid red;
+	border-radius: 10px;
+}
+
+.img-selected:hover {
+	cursor: pointer;
+}
